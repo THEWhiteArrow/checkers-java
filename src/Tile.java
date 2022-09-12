@@ -1,15 +1,11 @@
 import javafx.scene.Node;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 
 import java.util.Map;
 
 public class Tile
 {
-  private String name;
-  private String id;
-  private String color;
+  private String name,id,color;
   private GridPane grid;
   private Map<String,Tile> board;
 
@@ -22,10 +18,9 @@ public class Tile
     this.grid=grid;
   }
 
-  public Tile(String name, String color)
-  {
-    this.name = name;
-    this.color = color;
+  public void set(String name, String color){
+    this.name=name;
+    this.color=color;
   }
 
   public String getName() {return name;}

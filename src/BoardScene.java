@@ -6,7 +6,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
@@ -81,8 +80,7 @@ public class BoardScene extends Application
     }
     startBtn.setVisible(false);
   }
-  public void showMoves(MouseEvent e)
-  {
+  public void showMoves(MouseEvent e) {
     if(board.size()==0)return;
     deactivateTiles();
 
@@ -92,8 +90,6 @@ public class BoardScene extends Application
     for(String move : moves) board.get(move).addClass("active");
 
   }
+  public void deactivateTiles(){ for(String id : board.keySet()) board.get(id).removeClass("active"); }
 
-  public void deactivateTiles(){
-    for(String id : board.keySet()) board.get(id).removeClass("active");
-  }
 }
