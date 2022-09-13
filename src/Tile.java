@@ -1,79 +1,45 @@
 import javafx.scene.Node;
-import javafx.scene.layout.GridPane;
 
 import java.util.Map;
 
 public class Tile
 {
-  private String name,id,color;
-  private GridPane grid;
-  private Map<String,Tile> board;
+  private String id;
+  private Node node;
+  private Piece piece;
+  private boolean isActive=false;
+  private boolean isPieceActive=false;
 
-  public Tile(String id, String name, String color, GridPane grid, Map<String,Tile> board)
+  public Tile(Node node, int value, Map<String,Tile> board)
   {
-    this.id = id;
-    this.name = name;
-    this.color = color;
-    this.board=board;
-    this.grid=grid;
+    this.id= node.getId();
+    this.node = node;
+    this.piece = new Piece(value,id,board);
+
+    addClass(piece.getName()+"-"+piece.getColor());
   }
 
-  public void set(String name, String color){
-    this.name=name;
-    this.color=color;
+  public Piece getPiece() { return piece; }
+
+  public String getClassName(){ return piece.getName()+"-"+piece.getColor();}
+  public boolean isActiveTile() { return isActive; }
+  public boolean isActivePiece() { return isPieceActive; }
+
+  public void activateTile(){
+    addClass("active");
+    isActive=true;
+  }
+  public void deactivateTile(){
+    removeClass("active");
+    isActive=false;
+    isPieceActive=false;
   }
 
-  public String getName() {return name;}
+  public void activatePiece() { isPieceActive = true; }
 
-  public String getColor() {return color;}
+  public void deactivatePiece() { isPieceActive = false; }
 
-  public String[] getMoves(){
-    String[] arr = new String[0];
-    if(name==null) return arr;
+  public void addClass(String className){ node.getStyleClass().add( className ); }
+  public void removeClass(String className){ node.getStyleClass().removeIf( styleClass -> styleClass.equals(className) ); }
 
-
-    String temp="";
-    int y = Character.getNumericValue(id.charAt(1));
-    int x=(int)id.charAt(0)-'a'+1;
-
-//    System.out.println("x : "+x);
-//    System.out.println("y : "+y);
-    if(color=="white"){
-      if(y+1<=8 && x-1>=1 && board.get(getNewId(-1,1)).getName()==null) temp+=getNewId(-1,1);
-
-      if(y+1<=8 && x+1<=8 && board.get(getNewId(1,1)).getName()==null) temp+=getNewId(1,1);
-    }else{
-      if(y-1>=1 && x-1>=1 && board.get(getNewId(-1,-1)).getName()==null) temp+=getNewId(-1,-1);
-
-      if(y-1>=1 && x+1<=8 && board.get(getNewId(1,-1)).getName()==null) temp+=getNewId(1,-1);
-    }
-
-    System.out.println(temp);
-    if(temp.length()>0){
-      arr = new String[temp.length()/2];
-      for(int i = 0; i<temp.length();i+=2) arr[i/2]= temp.substring(i,i+2);
-    }
-
-    return arr;
-  }
-
-  public void addClass(String className){
-    for(Node node : grid.getChildren())
-      if( id.equals(node.getId()) ) node.getStyleClass().add("active");
-  }
-
-  public void removeClass(String className){
-    for(Node node : grid.getChildren())
-      if( id.equals(node.getId()) )
-        node.getStyleClass().removeIf(styleClass -> styleClass.equals(className));
-
-  }
-
-  public String getNewId(int rx, int ry){
-    return "" + getChar(id.charAt(0),rx)+ (Character.getNumericValue(id.charAt(1))+ry);
-  }
-
-  public char getChar(char c, int r){
-    return (char) ((int)c + r ) ;
-  }
 }

@@ -18,7 +18,7 @@
         <AnchorPane maxHeight="100.0" minHeight="100.0" prefHeight="100.0" SplitPane.resizableWithParent="false">
             <children>
                 <Label layoutX="454.0" layoutY="32.0" />
-            <Button fx:id="startBtn" layoutX="365.0" layoutY="28.0" mnemonicParsing="false" onAction="#createBoardMap" style="-fx-background-color: #4ba35b;" text="Start" textFill="WHITE">
+            <Button fx:id="startBtn" alignment="CENTER" layoutX="341.0" layoutY="28.0" mnemonicParsing="false" onAction="#createBoardMap" prefHeight="43.0" prefWidth="117.0" style="-fx-background-color: #4ba35b;" text="Start" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
@@ -63,259 +63,259 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <AnchorPane fx:id="h8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="h8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="f4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="a5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="c5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="e5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="g5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="h4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="h4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="d4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="b4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="a8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="b7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="d7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="c8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="e8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="f7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="g8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="h7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="h7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="g6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="e6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="c6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="a6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="b5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="d5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="f5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="h5" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                        <AnchorPane fx:id="h5" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="4">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="g4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="e4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="c4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a4" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <AnchorPane fx:id="a4" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="b3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="f3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="g2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="7" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="h1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="h1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="f1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="6" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="e2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="5" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="c2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="3" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="a2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="1" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="d3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="h3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="h3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="8" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="a1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="b1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="2" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="c1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="d1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EEEED2;" GridPane.columnIndex="4" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="e1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g1" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                        <AnchorPane fx:id="g1" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="8">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="h2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="h2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="f2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="d2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b2" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                        <AnchorPane fx:id="b2" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="a3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="c3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="e3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g3" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                        <AnchorPane fx:id="g3" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="6">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="h6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="h6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="8" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="f6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="c7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="c7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="e7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="e7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="5" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="g7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="g7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="7" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="f8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="f8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="6" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="b8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="b6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="b6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d6" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                        <AnchorPane fx:id="d6" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="a7" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <AnchorPane fx:id="a7" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
-                        <AnchorPane fx:id="d8" onMouseClicked="#showMoves" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                        <AnchorPane fx:id="d8" onMouseClicked="#manageTileClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769655;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></AnchorPane>
