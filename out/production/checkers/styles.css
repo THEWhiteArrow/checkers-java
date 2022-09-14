@@ -13,3 +13,6 @@
   -fx-background-position: center !important;
   -fx-background-repeat:no-repeat !important;
 }
+.bg-red{
+  -fx-background-color:red !important;
+}
