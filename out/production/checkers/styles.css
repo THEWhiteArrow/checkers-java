@@ -1,9 +1,9 @@
-.checker-white{
+.piece1{
   -fx-background-image: url("./assets/whitePiece.png");
   -fx-background-position: center;
   -fx-background-repeat:no-repeat;
 }
-.checker-black{
+.piece-1{
   -fx-background-image: url("./assets/blackPiece.png");
   -fx-background-position: center;
   -fx-background-repeat:no-repeat;
@@ -12,7 +12,4 @@
   -fx-background-image: url("./assets/dotActive.png");
   -fx-background-position: center !important;
   -fx-background-repeat:no-repeat !important;
-}
-.bg-red{
-  -fx-background-color:red !important;
 }

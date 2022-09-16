@@ -7,38 +7,44 @@ public class Tile
   private String id;
   private Node node;
   private Piece piece;
-  private boolean isActive=false;
-  private boolean isPieceActive=false;
+  private boolean isActive = false;
 
-  public Tile(Node node, int value, Map<String,Tile> board)
+  public Tile(String id, Node node, int value)
   {
-    this.id= node.getId();
+    this.id= id;
     this.node = node;
-    this.piece = new Piece(value,id,board);
-
-    addClass(piece.getName()+"-"+piece.getColor());
+    this.piece = new Piece(value);
   }
-
   public Piece getPiece() { return piece; }
+  public String getId() { return id; }
+  public Node getNode() { return node; }
 
-  public String getClassName(){ return piece.getName()+"-"+piece.getColor();}
-  public boolean isActiveTile() { return isActive; }
-  public boolean isActivePiece() { return isPieceActive; }
+  public void activate() { isActive = true; }
+  public void deactivate() { isActive = false; }
 
-  public void activateTile(){
-    addClass("active");
-    isActive=true;
-  }
-  public void deactivateTile(){
-    removeClass("active");
-    isActive=false;
-    isPieceActive=false;
-  }
-
-  public void activatePiece() { isPieceActive = true; }
-
-  public void deactivatePiece() { isPieceActive = false; }
-
+  //  private boolean isActive=false;
+//  private boolean isPieceActive=false;
+//
+//
+//
+//  public String getClassName(){ return piece.getName()+"-"+piece.getColor();}
+//  public boolean isActiveTile() { return isActive; }
+//  public boolean isActivePiece() { return isPieceActive; }
+//
+//  public void activateTile(){
+//    addClass("active");
+//    isActive=true;
+//  }
+//  public void deactivateTile(){
+//    removeClass("active");
+//    isActive=false;
+//    isPieceActive=false;
+//  }
+//
+//  public void activatePiece() { isPieceActive = true; }
+//
+//  public void deactivatePiece() { isPieceActive = false; }
+//
   public void addClass(String className){ node.getStyleClass().add( className ); }
   public void removeClass(String className){ node.getStyleClass().removeIf( styleClass -> styleClass.equals(className) ); }
 
